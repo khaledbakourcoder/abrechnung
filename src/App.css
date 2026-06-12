@@ -11,6 +11,26 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+.tank--icon{
+  font-size: 2rem;
+}
+.header-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.calc--icon{
+  font-size: 2rem;
+
+
+}
 /* Die Hauptkarte */
 .billing-card {
   width: 100%;
@@ -105,6 +125,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   outline: none;
+  text-align: center;
 }
 
 .currency-input:focus {

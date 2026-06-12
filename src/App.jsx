@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-
+import { CiCalculator2 } from "react-icons/ci";
+import { GiFuelTank } from "react-icons/gi";
 function App() {
   const [inputs, setInputs] = useState({
     kleingeld: '',
@@ -110,7 +111,7 @@ function App() {
 
           {/* HEADER */}
           <div className="header-section">
-            <h2 className="header-title">⛽ Kassen-Abrechnung</h2>
+            <h2 className="header-title"><GiFuelTank className={"tank--icon"}/> Kassen-Abrechnung</h2>
             <div className="target-badge">
               Soll-Bestand: <strong className="target-amount">500,00 €</strong>
             </div>
@@ -150,7 +151,7 @@ function App() {
             </div>
 
             <button type="submit" className="submit-btn">
-              Abrechnung erstellen 📊
+              Abrechnung erstellen <CiCalculator2 className={"calc--icon"}/>
             </button>
           </form>
 
