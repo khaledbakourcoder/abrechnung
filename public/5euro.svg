@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bg-5euro" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7ca1b4" />
+            <stop offset="50%" stop-color="#5a7b8c" />
+            <stop offset="100%" stop-color="#3b4f5a" />
+        </linearGradient>
+        <linearGradient id="neon-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#38bdf8" />
+            <stop offset="100%" stop-color="#0284c7" />
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
+        </filter>
+    </defs>
+
+    <!-- HINTERGRUND-KACHEL ENTFERNT -> VOLLSTÄNDIG TRANSPARENT -->
+
+    <g transform="translate(60, 60) rotate(-6) translate(-60, -60)" filter="url(#shadow)">
+        <rect x="14" y="34" width="92" height="52" rx="4" fill="url(#bg-5euro)" stroke="#2e3d46" stroke-width="1.5" />
+        <rect x="86" y="34" width="11" height="52" fill="url(#neon-blue)" opacity="0.6" />
+        <path d="M 42,70 L 42,54 C 42,48 58,48 58,54 L 58,70" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.25" />
+        <path d="M 38,70 L 62,70" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.25" />
+        <text x="24" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="24" fill="#ffffff" opacity="0.9">5</text>
+        <text x="56" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="7" fill="#8cb3c7" letter-spacing="0.5">EURO</text>
+        <text x="73" y="63" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="12" fill="#38bdf8">€</text>
+    </g>
+</svg>

@@ -1,0 +1,240 @@
+/* Grundaufbau & Hintergrund */
+.app-container {
+  background-color: #121214;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Die Hauptkarte */
+.billing-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1e1e2f;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  border: 1px solid #2d2d44;
+}
+
+/* Header */
+.header-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header-title {
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.target-badge {
+  display: inline-block;
+  background-color: #2d2d44;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
+
+.target-amount {
+  color: #38bdf8;
+}
+
+/* Formular & Zeilen */
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a3e;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #3f3f5c;
+}
+
+/* RIESIGE BILDER (ohne Text daneben) */
+/* Für die Eingabezeilen oben */
+.coin-img, .bill-img {
+  width: 140px;         /* Perfekte Breite für große, gut lesbare Scheine */
+  height: 80px;         /* Höherer Wert, damit die Scheine wachsen */
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Für die fertige Abrechnungs-Anweisung unten */
+.result-bill-img, .result-coin-img {
+  width: 90px;          /* Etwas größer als vorher, aber kompakt für die Liste */
+  height: 50px;
+  object-fit: contain;
+  border: none;
+  background-color: transparent;
+}
+
+/* Farbige Indikatoren links */
+.row-kleingeld { border-left: 5px solid gold; }
+.row-5euro     { border-left: 5px solid gray; }
+.row-10euro    { border-left: 5px solid #ef4444; }
+.row-20euro    { border-left: 5px solid blue; }
+.row-50euro    { border-left: 5px solid #f97316; }
+.row-100euro   { border-left: 5px solid #10b981; }
+
+/* Große Eingabefelder */
+.currency-input {
+  padding: 12px;
+  width: 120px;
+  text-align: right;
+  background-color: #1e1e2f;
+  border: 1px solid #52527a;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.currency-input:focus {
+  border-color: #3b82f6;
+}
+
+/* Berechnen Button */
+.submit-btn {
+  margin-top: 15px;
+  padding: 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Ergebnisse-Bereich */
+.results-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #1a1a26;
+  border-radius: 12px;
+  border: 1px solid #33334d;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.withdraw-total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  margin-bottom: 15px;
+}
+
+.withdraw-title {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.withdraw-amount {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.instruction-title {
+  margin: 0 0 10px 0;
+  color: #38bdf8;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.instruction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.instruction-item {
+  background-color: #242438;
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2d2d44;
+}
+
+/* Bildgröße in der Abrechnungs-Anweisung */
+.result-bill-img {
+  width: 70px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.result-coin-img {
+  width: 70px;
+  height: 40px;
+  object-fit: contain;
+  background-color: transparent;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.item-count {
+  font-weight: 700;
+  color: #38bdf8;
+  font-size: 1.2rem;
+}
+
+/* Status-Meldungen */
+.status-perfect {
+  padding: 12px;
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 8px;
+  color: #34d399;
+  text-align: center;
+  font-weight: 600;
+}
+
+.status-minus {
+  padding: 12px;
+  background-color: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  border-radius: 8px;
+  color: #fbbf24;
+  text-align: center;
+  font-weight: 600;
+}
